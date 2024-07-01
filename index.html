@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>UI Concept</title>
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+        }
+        .navbar-custom {
+            background-color: white;
+            box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+            border: 1px solid black;
+        }
+        .profile {
+            background-color: #f0f8ff;
+            border: 1px solid black;
+        }
+        .profilePic {
+            background-color: #cceeff;
+            border: 1px solid black;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        .profilePic img {
+            max-width: 100%;
+            max-height: 100%;
+            object-fit: contain;
+        }
+        .kontakButton {
+            background-color: white;
+            color: black;
+        }
+        .kontakButton:focus, .kontakButton:active {
+            background-color: darkblue;
+            color: white;
+            box-shadow: 0 0 0 0.25rem rgba(0, 123, 255, 0.5); /* Custom focus outline */
+        }
+        .resumeButton {
+            background-color: white;
+            color: black;
+            border: 1px solid blue;
+        }
+        .resumeButton:focus, .resumeButton:active {
+            background-color: darkblue;
+            color: white;
+            box-shadow: 0 0 0 0.25rem rgba(0, 123, 255, 0.5); /* Custom focus outline */
+        }
+        .dbForm {
+            border: 1px solid black;
+            padding: 10px;
+            background-color: #ccffcc;
+        }
+    </style>
+</head>
+<body>
+
+    <nav class="navbar navbar-expand-lg navbar-light navbar-custom">
+        <div class="container">
+            <a class="navbar-brand" href="#">Brand</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item"><a class="nav-link" href="#">Menu 1</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#">Menu 2</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#">Menu 3</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#">Menu 4</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#">Menu 5</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <div class="container profile my-4 p-4">
+        <div class="row">
+            <div class="col-md-4 profileA">
+                <div class="profilePic p-3">
+                    <img src="images/logotsel.png" alt="Profile Picture">
+                </div>
+            </div>
+            <div class="col-md-4 text-center">
+                <h2>Nama Anda</h2>
+                <p>Random Name</p>
+                <button class="btn kontakButton mb-2">Kontak</button>
+                <button class="btn resumeButton mb-2">Resume</button>
+            </div>
+            <div class="col-md-4">
+                <table class="table table-bordered">
+                    <tr>
+                        <th>Info1</th>
+                        <td>Value1</td>
+                    </tr>
+                    <tr>
+                        <th>Info2</th>
+                        <td>Value2</td>
+                    </tr>
+                    <tr>
+                        <th>Info3</th>
+                        <td>Value3</td>
+                    </tr>
+                    <tr>
+                        <th>Info4</th>
+                        <td>Value4</td>
+                    </tr>
+                    <tr>
+                        <th>Info5</th>
+                        <td>Value5</td>
+                    </tr>
+                </table>
+            </div>
+        </div>
+        <div class="dbForm my-4 p-4">
+            <form>
+                <div class="mb-3">
+                    <label for="field-1" class="form-label">Field-1</label>
+                    <input type="text" class="form-control" id="field-1">
+                </div>
+                <div class="mb-3">
+                    <label for="field-2" class="form-label">Field-2</label>
+                    <input type="text" class="form-control" id="field-2">
+                </div>
+                <div class="mb-3">
+                    <label for="field-3" class="form-label">Field-3</label>
+                    <input type="text" class="form-control" id="field-3">
+                </div>
+                <div class="mb-3">
+                    <label for="field-4" class="form-label">Field-4</label>
+                    <input type="text" class="form-control" id="field-4">
+                </div>
+                <div class="mb-3">
+                    <label for="field-5" class="form-label">Field-5</label>
+                    <input type="text" class="form-control" id="field-5">
+                </div>
+                <div class="mb-3">
+                    <label for="field-6" class="form-label">Field-6</label>
+                    <input type="text" class="form-control" id="field-6">
+                </div>
+                <div class="mb-3">
+                    <label for="field-7" class="form-label">Field-7</label>
+                    <input type="text" class="form-control" id="field-7">
+                </div>
+                <button type="submit" class="btn kontakButton">Submit</button>
+            </form>
+        </div>
+    </div>
+
+    <!-- Bootstrap JS and dependencies -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-QYk2sbb/jb5aWB7QoXr6PRK7EcPfP8fr0BB16VYjoq5IoI+bmg7wWOfBjBtFvCg1" crossorigin="anonymous"></script>
+</body>
+</html>
